@@ -1,5 +1,23 @@
+/* MedicationCard.js Ryan Kluttz, Brayden Gardner November 15, 2024
+
+This is a React component for displaying medication information in a card format. 
+This is the object that actually goes into the User's Pillbox
+It provides functionality for editing, deleting, and scheduling medications, as well as adding them to a pillbox.
+Features are conditional rendering of buttons and forms considering the medication's state and user permissions.
+*/
+
+
+
+
 import React, { useState } from 'react';
 import '../App.css';
+
+
+
+
+//Brayden & Ryan: Anything in this file made as calender/scheduling was made by Ryan
+//Anything else was made by Brayden
+
 
 
 // Medicaiton Card here is a reusable component that can be used to display medication information.
