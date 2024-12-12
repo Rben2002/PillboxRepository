@@ -1,8 +1,17 @@
+/* CreateMedication.js Brayden Gardner October 20, 2024
+
+This is a React component for creating custom medications.
+It allows users to input medication details and submit them to a backend API for creation.
+The Features are form validation, error, and navi to the pillbox page after successful creation.
+*/
+
+
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
 
-
+//Brayden: I implemented this file
 // This is the main component for creating a custom medication.
 const CreateMedication = () => {
   const [medicationData, setMedicationData] = useState({
