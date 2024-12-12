@@ -1,8 +1,17 @@
+/* SearchMedication.js Brayden Gardner November 20, 2024
+
+This is a React component for searching medications by name.
+This is what is displayed when a user wants to look up a medication.
+It gets medication data from a backend API, deals with form submission, and displays search results.
+Features are loading animations, error handling, and rendering "medication cards" for search endings.
+*/
 
 import React, { useState } from 'react';
 import MedicationCard from './MedicationCard';
 import '../App.css';
 
+
+//Brayden: I implemented this file
 
 // This component allows users to search for medication by name
 const SearchMedication = () => {
