@@ -2,7 +2,7 @@
 
 This is a React component for displaying a user's pillbox, which contains their medications.
 It fetches pillbox data from a backend API, handles updating and removing medications, and navigates to related pages.
-Features include conditional rendering of the empty pillbox view, medication cards, and navigation buttons.
+Features are conditional rendering of the empty pillbox view, medication cards, and navigation buttons.
 */
 
 
@@ -13,6 +13,9 @@ import MedicationCard from './MedicationCard';
 import '../App.css';
 
 
+
+//Brayden & Ryan: Anything calender related Ryan made
+//Anything else, Brayden made
 const Pillbox = () => {
   // Add medications state
   const [medications, setMedications] = useState([]);
