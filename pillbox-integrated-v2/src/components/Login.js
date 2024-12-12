@@ -1,9 +1,21 @@
+/* Login.js Brayden Gardner October 7, 2024
+
+This is a React component for dealing with user login and sign-up functionality.
+It provides a form for users to input their credentials, handles form submission,
+and navigates to the pillbox page when successful login/sign-up.
+Features are conditional showing of form fields based on login/sign-up mode.
+*/
+
+
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';  
 import '../App.css';  
 import '../Login.css';  
 
 
+
+//Brayden: I implemented this file
 const Login = ({ onLogin }) => {  
   const [isLoginMode, setIsLoginMode] = useState(true);
   const [formData, setFormData] = useState({
