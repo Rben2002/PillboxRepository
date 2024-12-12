@@ -1,6 +1,6 @@
 /* app.js Brayden Gardner Virginia Tech November 9, 2024
 * This file implements a React application with user authentication and routing 
-for different components such as a homepage, login, search medication, pillbox, and calendar.
+for different components like the  homepage, login, search medication, pillbox, and calendar.
 Responsbile for the main functionality of the frontend
 */
 
