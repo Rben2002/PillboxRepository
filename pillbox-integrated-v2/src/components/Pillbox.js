@@ -1,8 +1,17 @@
+/* Pillbox.js Brayden Gardner, Ryan Kluttz November 15, 2024
+
+This is a React component for displaying a user's pillbox, which contains their medications.
+It fetches pillbox data from a backend API, handles updating and removing medications, and navigates to related pages.
+Features include conditional rendering of the empty pillbox view, medication cards, and navigation buttons.
+*/
+
+
 
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import MedicationCard from './MedicationCard';
 import '../App.css';
+
 
 const Pillbox = () => {
   // Add medications state
