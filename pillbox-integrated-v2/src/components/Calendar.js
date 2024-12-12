@@ -1,8 +1,17 @@
-// Calendar.js
+/* Calendar.js Ryan Kluttz November 28, 2024
+
+This is a React component for displaying a calendar of medication schedules.
+It gets the schedule data from a backend API and renders a grid-based calendar view.
+Features are clicking on medication entries to view details and deleting schedules.
+*/
+
+
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
 
+
+//Ryan: Implemented the calender functionality 
 const Calendar = () => {
   const [schedules, setSchedules] = useState([]);
   const [error, setError] = useState('');
