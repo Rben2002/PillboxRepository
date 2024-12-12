@@ -1,6 +1,7 @@
 /* app.js Brayden Gardner Virginia Tech November 9, 2024
 * This file implements a React application with user authentication and routing 
 for different components such as a homepage, login, search medication, pillbox, and calendar.
+Responsbile for the main functionality of the frontend
 */
 
 import React, { useState } from 'react';
@@ -14,6 +15,9 @@ import Pillbox from './components/Pillbox';
 import CreateMedication from './components/CreateMedication'; 
 import Calendar from './components/Calendar'; 
 
+
+
+//Brayden: I implemented most of this
 function App() {
   // Check if the user is authenticated
   const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('user_id'));
