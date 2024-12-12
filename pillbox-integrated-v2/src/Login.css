@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb); 
+    padding: 20px;
+  }
+  
+  .form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .titleLog {
+    font-size: 2.5rem;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input {
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #6e8efb;
+  }
+  
+  .button {
+    padding: 12px;
+    background-color: #6e8efb;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #5765c7;
+  }
+  
+  .switchText {
+    margin-top: 15px;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .switchButton {
+    background: none;
+    border: none;
+    color: #6e8efb;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .switchButton:hover {
+    color: #5765c7;
+  }
+  
