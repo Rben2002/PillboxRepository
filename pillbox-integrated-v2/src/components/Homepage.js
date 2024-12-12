@@ -1,6 +1,18 @@
+/* Homepage.js Brayden Gardner September 30, 2024
+
+This is a React component for the application's homepage.
+It displays a brief introduction to the Pillbox application and gives a "Get Started" button to navigate to the login or pillbox page based on user authentication status.
+Features are responsive styling and conditional navi.
+*/
+
+
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
+
+//Brayden: I implemented this file
 const HomePage = () => {
   const navigate = useNavigate();  // Hook for navigation
 
