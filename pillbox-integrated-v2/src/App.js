@@ -1,4 +1,7 @@
-
+/* app.js Brayden Gardner Virginia Tech November 9, 2024
+* This file implements a React application with user authentication and routing 
+for different components such as a homepage, login, search medication, pillbox, and calendar.
+*/
 
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
