@@ -1,7 +1,18 @@
+/* Header.js Brayden Gardner September 30, 2024
+
+This is a React component for the application header.
+It has navigation links and handles user authentication state.
+Features are conditional rendering of links based on authentication status and a logout button.
+*/
+
+
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../App.css';
 
+
+
+//Brayden: I implemented this file 
 const Header = ({ isAuthenticated, onLogout }) => {
   const navigate = useNavigate();
 
