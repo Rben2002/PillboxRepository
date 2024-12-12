@@ -1,4 +1,4 @@
-''' app.py Brayden Gardner Virginia Tech October 1, 2024
+''' app.py Brayden Gardner, Ryan Kluttz, Rami Benhamida, Adam Bowman, Ajani Nembhard Virginia Tech October 1, 2024
 This file serves as the flask web service backend, providing 
 APIs to manage user's medication schedules and retrieve drug information.
 * Modified November 27, 2024 to add delete functionality
@@ -21,6 +21,8 @@ CORS(app)  # enable CORS for all routes
 GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 CUSTOM_SEARCH_ENGINE_ID = os.getenv('CUSTOM_SEARCH_ENGINE_ID')
 
+
+# Ryan: I did anything related to schedule
 @app.route('/add_medication_schedule', methods=['POST'])
 def add_medication_schedule():
     data = request.json
@@ -70,7 +72,10 @@ def delete_medication_schedule():
     except Exception as e:
         print(f"Error deleting medication schedule: {e}")
         return jsonify({"error": "An error occurred while deleting medication schedule"}), 500
-    
+
+
+
+# Brayden: I implemented this function
 @app.route('/get_drug_info', methods=['POST'])
 def get_drug_info():
     data = request.json
@@ -131,6 +136,7 @@ def get_drug_info():
 
     return jsonify({"output": output, "image_url": image_url})
 
+#Ajani: I implemented this
 def get_drug_image(drug_name):
     api_url = 'https://www.googleapis.com/customsearch/v1'
     params = {
@@ -158,6 +164,8 @@ def get_drug_image(drug_name):
 user_db = UserDatabaseManager()
 prescription_db = PrescriptionDatabaseManager()
 
+
+# Brayden : I implemented this
 # endpoint for user registration
 @app.route('/register', methods=['POST'])
 def register():
@@ -176,6 +184,7 @@ def register():
     return jsonify({"message": "User registered successfully"}), 201
 
 
+#Brayden: I implemented this
 @app.route('/login', methods=['POST'])
 def login():
     data = request.json 
@@ -191,7 +200,7 @@ def login():
         return jsonify({"message": "Invalid credentials"}), 401
 
 
-
+#Brayden: I implemented this
 @app.route('/users', methods=['GET'])
 def get_users():
     users = user_db.query_all_users()  
@@ -201,6 +210,7 @@ def get_users():
 
 
 # prescription endpoint
+#Rami: I implemented this
 @app.route('/prescriptions', methods=['POST'])
 def add_prescription():
     data = request.json
@@ -215,6 +225,7 @@ def add_prescription():
 
 
 # add medication to pillbox endpoint
+#Rami: I implemented this
 @app.route('/add_to_pillbox', methods=['POST'])
 def add_to_pillbox():
     data = request.json
@@ -237,6 +248,7 @@ def add_to_pillbox():
 
 
 @app.route('/create_medication', methods=['POST'])
+#Rami: I implemented this
 def create_medication():
     data = request.json
     user_id = data.get('user_id')
@@ -254,6 +266,7 @@ def create_medication():
 
 # update medication endpoint
 @app.route('/update_medication', methods=['POST'])
+#Rami: I implemented this
 def update_medication():
     data = request.json
     user_id = data.get('user_id')
@@ -284,6 +297,7 @@ def update_medication():
 
 
 # deleting medication from pillbox endpoint
+#Rami: I implemented this
 @app.route('/delete_medication', methods=['POST'])
 def delete_medication():
     data = request.json
@@ -308,6 +322,7 @@ def delete_medication():
         return jsonify({"error": "An error occurred while deleting medication"}), 500
 
 # retrieve a users pillbox endpoint
+#Brayden: I implemented this
 @app.route('/get_pillbox', methods=['GET'])
 def get_pillbox():
     user_id = request.args.get('user_id')
